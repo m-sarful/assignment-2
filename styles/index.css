@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* colors variables  */
+:root{
+    --primary-color: #131318;;
+    --secondary-color: #FF5400;
+    --third-color: rgba(19, 19, 24, 0.70);
+    --fourth-color: #FFF;
+}
+body{
+    max-width: 1280px;
+    margin: 2rem auto;
+    font-family: 'Barlow', sans-serif;
+}
+/* styles navbar  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+.logo h1{
+    font-size: 2rem;
+}
+ul {
+    display: flex;
+    gap: 1.5rem;
+}
+ul > li{
+    list-style: none;
+}
+ ul li a{
+     text-decoration: none;
+     color: var(--primary-color);
+ }
+ .active{
+    color: var(--secondary-color);
+ }
+ .three-dot{
+    display: none;
+ }
+.banner{
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
+    url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content{
+   text-align: center;
+}
+.banner-title{
+    color: var(--fourth-color);
+    font-size: 3rem;
+    font-weight: 800;
+}
+.banner-description{
+    color: var(--fourth-color);
+    font-weight: 400;
+}
+.banner-input-box{
+    display: flex;
+    gap: 1rem;
+   padding: 1rem;
+    margin-top: 3rem;
+    background: rgba(255, 255, 255, 0.30);
+}
+#where,[value="where"], #select,[value="select"],#search-box,[type="search"], .primary-btn{
+    padding: 0.5rem;
+    color: gray;
+    width: 10rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+.primary-btn{
+    background-color: var(--secondary-color);
+    color: var(--fourth-color);
+}
+
+
+
+
+
+  /* mobile responsive  */
+ @media screen and (max-width: 600px){
+    body{
+        max-width: 576px;
+        margin: 0 1rem ;
+    }
+  
+    .navbar{
+        display: none;
+    }
+   
+    .three-dot{
+        display: block;
+        margin-left: 3rem;
+    }
+    
+    .banner{
+        width: 100%;
+        height: 100%;
+       justify-content: center;
+    }
+    .banner-input-box{
+        flex-direction: column;
+    }
+ }
