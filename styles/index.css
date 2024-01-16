@@ -55,8 +55,9 @@ ul li a {
     color: var(--secondary-color);
 }
 
-.three-dot {
+.menu-bar{
     display: none;
+    font-size: 2rem;
 }
 
 .banner {
@@ -136,7 +137,7 @@ ul li a {
 
 .tour-list li,
 #list-summary {
-    margin-top: 3.5rem;
+    margin-top: 2.8rem;
 }
 
 .destination {
@@ -208,20 +209,27 @@ ul li a {
     grid-template-columns: repeat(12, 1fr);
     gap: 0.5rem;
     margin-top: 2rem;
+   
 }
 
 .card-1{
     grid-column: 1/ span 6;
     background-color:  rgba(251, 181, 99, 0.05);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ padding: 1rem;
 }
 .card-2{
     grid-column: 7 / span 12;
-    background-color: rgba(41, 206, 246, 0.05);;
+    background-color: rgba(41, 206, 246, 0.05);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem;
 }
 .card-3{
      width: 65%;
     grid-column: 4 / span 9;
-    background-color: rgba(233, 68, 68, 0.05);;
+    background-color: rgba(233, 68, 68, 0.05);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem;
 }
 
 .choose-description{
@@ -331,13 +339,14 @@ footer p{
         margin: 0 1rem;
     }
 
-    .navbar {
-        display: none;
-    }
-
-    .three-dot {
+   .navbar{
+    display: none;
+   }
+   
+    .menu-bar {
         display: block;
         margin-left: 3rem;
+
     }
 
     .banner {
