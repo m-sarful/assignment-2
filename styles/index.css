@@ -359,7 +359,7 @@ footer p{
 /* mobile responsive  */
 @media screen and (max-width: 600px) {
     body {
-        margin: 0 1rem;
+        margin: 1rem 1rem;
     }
 
    .navbar{
