@@ -1,123 +1,236 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* colors variables  */
-:root{
-    --primary-color: #131318;;
+:root {
+    --primary-color: #131318;
+    ;
     --secondary-color: #FF5400;
     --third-color: rgba(19, 19, 24, 0.70);
     --fourth-color: #FFF;
 }
-body{
+
+body {
     max-width: 1280px;
     margin: 2rem auto;
     font-family: 'Barlow', sans-serif;
 }
+
 /* styles navbar  */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+
+.logo {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
     align-items: center;
 }
-.logo h1{
+
+.logo h1 {
     font-size: 2rem;
 }
+
 ul {
     display: flex;
     gap: 1.5rem;
 }
-ul > li{
+
+ul>li {
     list-style: none;
 }
- ul li a{
-     text-decoration: none;
-     color: var(--primary-color);
- }
- .active{
+
+ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.active {
     color: var(--secondary-color);
- }
- .three-dot{
+}
+
+.three-dot {
     display: none;
- }
-.banner{
-    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
-    url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+}
+
+.banner {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
+        url("../Images/Group\ 13\ \(1\)\ \(1\).png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.banner-content{
-   text-align: center;
+
+.banner-content {
+    text-align: center;
 }
-.banner-title{
+
+.banner-title {
     color: var(--fourth-color);
     font-size: 3rem;
     font-weight: 800;
 }
-.banner-description{
+
+.banner-description {
     color: var(--fourth-color);
     font-weight: 400;
 }
-.banner-input-box{
+
+.banner-input-box {
     display: flex;
     gap: 1rem;
-   padding: 1rem;
+    padding: 1rem;
     margin-top: 3rem;
     background: rgba(255, 255, 255, 0.30);
 }
-#where,[value="where"], #select,[value="select"],#search-box,[type="search"], .primary-btn{
+
+#where,
+[value="where"],
+#select,
+[value="select"],
+#search-box,
+[type="search"],
+.primary-btn {
     padding: 0.5rem;
     color: gray;
     width: 10rem;
     border-radius: 0.5rem;
     border: none;
 }
-.primary-btn{
+
+.primary-btn {
     background-color: var(--secondary-color);
     color: var(--fourth-color);
 }
 
+.popular {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.popular-description,
+.tour-list {
+    font-size: 0.8rem;
+    color: var(--third-color);
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.tour-list {
+    margin-left: 2rem;
+}
+
+.tour-list li,
+#list-summary {
+    margin-top: 3.5rem;
+}
+
+.destination {
+    margin-top: 3rem;
+}
+
+.destination-text {
+    text-align: center;
+}
+
+.destination-description {
+    font-size: 0.8rem;
+    color: var(--third-color);
+    font-weight: 400;
+}
+
+.img-1 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 1rem;
+
+}
+
+.img-2 {
+    display: grid;
+    grid-template-columns: 35% 40% auto;
+    gap: 1rem;
+}
+
+.img-2 img {
+    width: 100%;
+    margin-top: 0.54rem;
+}
+
+.img-3 {
+    display: grid;
+    grid-template-columns: 40% auto;
+    gap: 1rem;
+}
+
+.img-3 img,
+.img-1 img {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    color: var(--fourth-color);
+}
+
+.place {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 
-
-  /* mobile responsive  */
- @media screen and (max-width: 600px){
-    body{
-        max-width: 576px;
-        margin: 0 1rem ;
+/* mobile responsive  */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0 1rem;
     }
-  
-    .navbar{
+
+    .navbar {
         display: none;
     }
-   
-    .three-dot{
+
+    .three-dot {
         display: block;
         margin-left: 3rem;
     }
-    
-    .banner{
+
+    .banner {
         width: 100%;
         height: 100%;
-       justify-content: center;
+        justify-content: center;
     }
-    .banner-input-box{
+
+    .banner-input-box,
+    .popular {
         flex-direction: column;
     }
- }
+
+    .popular-img img {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .img-1,
+    .img-2,
+    .img-3 {
+        grid-template-columns: 1fr;
+    }
+}
