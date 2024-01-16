@@ -51,8 +51,14 @@ ul li a {
     color: var(--primary-color);
 }
 
+li a:hover{
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
 .active {
     color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 .menu-bar{
@@ -155,6 +161,7 @@ ul li a {
 }
 
 .photo-collage{
+    margin-top: 1rem;
     display: grid;
      grid-template-columns: repeat(12, 1fr);
      gap: 1rem;
