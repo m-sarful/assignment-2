@@ -202,9 +202,9 @@ ul li a {
 .choose-card{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     gap: 0.5rem;
     margin-top: 2rem;
+    border: 1px solid green;
 }
 
 .card{
@@ -228,6 +228,31 @@ ul li a {
 .choose-description{
     margin-left: 2rem;
 }
+
+.video-container{
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    border: 1px solid red;
+}
+.video-text{
+    margin-top: 1.5rem;
+}
+.video-text p{
+    margin-top: 1rem;
+    color: var(--third-color);
+}
+
+.video-list{
+    margin-left: 2rem;
+    font-size: 0.8rem;
+}
+.video-list li{
+    padding: 0.5rem;
+    color: #131318;
+}
+
+
 
 
 
@@ -285,6 +310,12 @@ ul li a {
     }
 
     .card-3{
+        width: 100%;
+    }
+    .video-container{
+        flex-direction: column;
+    }
+    video{
         width: 100%;
     }
 }
