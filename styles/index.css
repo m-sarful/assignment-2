@@ -152,35 +152,38 @@ ul li a {
     font-weight: 400;
 }
 
-.img-1 {
+.photo-collage{
     display: grid;
-    grid-template-columns: 50% auto;
-    gap: 1rem;
-
+     grid-template-columns: repeat(12, 1fr);
+     gap: 1rem;
+     grid-template-areas: 
+     "a a a a a a b b b b b b"
+      "c c c c d d d d d e e e"
+       "f f f f f g g g g g g g"
+     ;
+}
+ #img-1{
+    grid-area: a;
+ }
+ #img-2{
+    grid-area: b;
+ }
+ #img-3{
+    grid-area: c;
+ }
+ #img-4{
+    grid-area: d;
+ }
+ #img-5{
+     grid-area: e;
+ }
+#img-6{
+    grid-area: f;
+}
+#img-7{
+    grid-area: g;
 }
 
-.img-2 {
-    display: grid;
-    grid-template-columns: 35% 40% auto;
-    gap: 1rem;
-}
-
-.img-2 img {
-    width: 100%;
-    margin-top: 0.54rem;
-}
-
-.img-3 {
-    display: grid;
-    grid-template-columns: 40% auto;
-    gap: 1rem;
-}
-
-.img-3 img,
-.img-1 img {
-    width: 100%;
-    margin-top: 0.5rem;
-}
 
 .image-container {
     position: relative;
@@ -363,7 +366,12 @@ form{
         width: 100%;
     }
     .discount-card{
-        margin: 2rem;
-        padding: 1rem;
+        margin: 2.2rem;
+        padding:0;
+        height: 6rem;
+    }
+    .photo-collage{
+        display: flex;
+        flex-direction: column;
     }
 }
